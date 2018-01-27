@@ -3,57 +3,100 @@
 <head>
 	<title>Chris Contact</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
-<body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<header>
 
-		<h1 class="Name">
-			Chris Beesley
-		</h1>
+<body class="bg-light">
 
-		<nav class="About">
-			<a href="index.html">About</a>
-		</nav>
 
-		<nav class="Portfolio">
-			<a href="portfolio.html">Portfolio</a>
-		</nav>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white pt-0 pb-0 border-bottom border-info" style="line-height:100px; height:100px;">
 
-		<nav class="Contact">
-			<a href="contact.html">Contact</a>
-		</nav>
+		<a class="navbar-brand ml-5 bg-info text-white my-0 pl-4 pr-4 py-0" style="font-size:200%;"href="#">Chris Beesley</a>
 
-	</header>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
-	<section class="SectionOne">
-		<h2 class="AboutMe">Contact</h2>
+			<span class="navbar-toggler-icon"></span>
 
-		<form action="mailto:beesleychc@gmail.com" method="post" enctype="text/plain">
-			Name:<br>
-			<input id="Name" type="text" name="name"><br>
-			E-mail:<br>
-			<input id="Email" type="text" name="mail"><br>
-			Comment:<br>
-			<input id="Comment" type="text" name="comment" size="50"><br><br>
-			<input class="Submit" type="submit" name="Send">
-			<input class="Submit" type="reset" name="Reset">
-		</form>
-	</section>
+		</button>
 
-	<section class="SectionTwo">
+		<div class="justify-content-end collapse navbar-collapse mr-5" data-target="collapse" id="navbarNavAltMarkup">
 
-		<h3 class="ConnectWithMe">Connect with Me</h3>
+			<div class="navbar-nav">
 
-		<a href="https://github.com/cbeez07" target="_blank"><img class="Git" src="assets/images/GitHub.png" alt="GitHub"></a>
+		  	<a class="nav-item nav-link pt-0 pb-0" href="index.html" style="height: 100px;">About</a>
 
-		<a href="https://www.linkedin.com/in/beesleyc07" target="_blank"><img class="LinkedIn" src="assets/images/LinkedIn.png" alt="LinkedIn"></a>
+		  	<span class="border-left border-right">
 
-		<a href="https://stackexchange.com/users/12539854/chris-beesley" target="_blank"><img class="Overflow" src="assets/images/Overflow.png" alt="Overflow"></a>
+					<a class="nav-item nav-link pt-0 pb-0" href="portfolio.html" style="height: 100px;">Portfolio</a>
 
-	</section>
+				</span>
 
-	<footer>
-		&copy;Copyright 2017 Christopher Beesley
-	</footer>
+				<a class="nav-item nav-link pt-0 pb-0" href="contact.html" style="height: 100px;">Contact</a>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<div class="container my-5">
+
+		<div class="row">
+
+
+			<div class="col-lg-7 col-md-12 col-sm-12 bg-white mb-5 border border-info">
+
+				<div class="row h2 border-bottom mb-2 pb-2 mx-2 text-info">
+
+					Contact Me
+
+				</div>
+
+				<form>
+				  <div class="form-group">
+				    <label for="form_name">Name:</label>
+				    <input type="text" class="form-control" id="form_name" placeholder="Enter first and last name">
+				  </div>
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Email address:</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				  </div>
+					<div class="form-group">
+					 <label for="exampleFormControlTextarea1">Comments:</label>
+					 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				 </div>
+			 </form>
+		 </div>
+
+		 <div class="col-lg-1">
+
+		 </div>
+
+		 <div class="col-lg-3 col-md-12 col-sm-12 bg-white border border-info mb-5" style="height: 150px;">
+			 <section class="row h4 pl-4 border-bottom mb-3 pb-2 text-info mt-2">
+
+					 Connect with Me
+
+			 </section>
+
+			 <a href="https://github.com/cbeez07" target="_blank"><img src="assets/images/GitHub.png" alt="GitHub" class="float-left ml-2 rounded" width="60"></a>
+
+			 <a href="https://www.linkedin.com/in/beesleyc07" target="_blank"><img src="assets/images/LinkedIn.png" alt="LinkedIn" class="float-left ml-2 rounded" width="60"></a>
+
+			 <a href="https://stackexchange.com/users/12539854/chris-beesley" target="_blank"><img src="assets/images/Overflow.png" alt="Overflow" class="float-left ml-2 rounded" width="60"></a>
+		 </div>
+	 </div>
+ 	</div>
+
+	<nav class="navbar navbar-inverse fixed-bottom bg-secondary mt-2 border-top border-success" id="footer">
+	  <div class="container-fluid justify-content-center">
+	    <div class="navbar-header">
+	      <a class="navbar-brand text-info" href="#">&copy;Copyright 2017 Christopher Beesley</a>
+	    </div>
+	  </div>
+	</nav>
+
+
 </body>
 </html>

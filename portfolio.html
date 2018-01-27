@@ -3,95 +3,141 @@
 <head>
 	<title>Chris Portfolio</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
 
-<body>
+<body class="bg-light">
 
-	<header>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white pt-0 pb-0 border-bottom border-info" style="line-height:100px; height:100px;">
 
-		<h1 class="Name">
-			Chris Beesley
-		</h1>
+		<a class="navbar-brand ml-5 bg-info text-white mt-0 mb-0 pl-4 pr-4 pt-0 pb-0" style="font-size:200%;"href="#">Chris Beesley</a>
 
-		<nav class="About">
-			<a href="index.html">About</a>
-		</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
-		<nav class="Portfolio">
-			<a href="portfolio.html">Portfolio</a>
-		</nav>
+			<span class="navbar-toggler-icon"></span>
 
-		<nav class="Contact">
-			<a href="contact.html">Contact</a>
-		</nav>
+		</button>
 
-	</header>
+		<div class="justify-content-end collapse navbar-collapse mr-5" data-target="collapse" id="navbarNavAltMarkup">
 
-	<section class="SectionOne">
+			<div class="navbar-nav">
 
-		<h2 class="AboutMe">Portfolio</h2>
+		  	<a class="nav-item nav-link pt-0 pb-0" href="index.html" style="height: 100px;">About</a>
 
-		<div class="Hangman">
+		  	<span class="border-left border-right">
 
-			<img src="assets/images/Hangman.jpg" width="193" alt="Hangman">
+					<a class="nav-item nav-link pt-0 pb-0" href="portfolio.html" style="height: 100px;">Portfolio</a>
 
-			<div class="HangmanText">Hangman</div>
+				</span>
+
+				<a class="nav-item nav-link pt-0 pb-0" href="contact.html" style="height: 100px;">Contact</a>
+
+			</div>
 
 		</div>
 
-		<div class="RPG">
+	</nav>
 
-			<img src="assets/images/RPG.jpg" width="193" alt="RPG">
+	<div class="container my-5">
 
-			<div class="RPGText">RPG Game</div>
+		<div class="row">
+
+
+			<div class="col-lg-7 col-md-12 col-sm-12 bg-white mb-5">
+
+				<div class="row h2 border-bottom mb-2 pb-2 mx-2 text-info">
+
+					Portfolio
+
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="card-deck">
+
+							<div class="card bg-dark text-white mb-3">
+								<img class="card-img"src="assets/images/Hangman.jpg" alt="Hangman">
+								<div class="card-img-overlay px-0">
+									<h6 class="card-title bg-info mx-0 text-center py-2">Hangman</h6>
+								</div>
+							</div>
+
+							<div class="card bg-dark text-white mb-3">
+								<img class="card-img"src="assets/images/RPG.jpg" alt="RPG Game">
+								<div class="card-img-overlay px-0">
+									<h6 class="card-title bg-info mx-0 text-center py-2">RPG Game</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="card-deck">
+
+							<div class="card bg-dark text-white mb-3">
+								<img class="card-img"src="assets/images/Trivia.jpg" alt="Trivia">
+								<div class="card-img-overlay px-0">
+									<h6 class="card-title bg-info mx-0 text-center py-2">Trivia Game</h6>
+								</div>
+							</div>
+
+							<div class="card bg-dark text-white mb-3">
+								<img class="card-img"src="assets/images/Rutgers.jpg" alt="Rutgers">
+								<div class="card-img-overlay px-0">
+									<h6 class="card-title bg-info mx-0 text-center py-2">Rutgers Info Widget</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6">
+
+						<div class="card bg-dark text-white mb-3">
+							<img class="card-img"src="assets/images/Rock.jpg" alt="Rock Paper Scissors">
+							<div class="card-img-overlay px-0">
+								<h6 class="card-title bg-info mx-0 text-center py-2">Rock Paper Scissors</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-1">
+
+			</div>
+
+			<div class="col-lg-3 col-md-12 col-sm-12 bg-white mb-5" style="height: 150px;">
+				<section class="row h4 pl-4 border-bottom mb-3 pb-2 text-info mt-2">
+
+						Connect with Me
+
+				</section>
+
+				<a href="https://github.com/cbeez07" target="_blank"><img src="assets/images/GitHub.png" alt="GitHub" class="float-left ml-2 rounded" width="60"></a>
+
+				<a href="https://www.linkedin.com/in/beesleyc07" target="_blank"><img src="assets/images/LinkedIn.png" alt="LinkedIn" class="float-left ml-2 rounded" width="60"></a>
+
+				<a href="https://stackexchange.com/users/12539854/chris-beesley" target="_blank"><img src="assets/images/Overflow.png" alt="Overflow" class="float-left ml-2 rounded" width="60"></a>
+			</div>
 
 		</div>
 
-		<div class="Trivia">
+	</div>
 
-			<img src="assets/images/Trivia.jpg" width="193" alt="Trivia">
+	<nav class="navbar navbar-inverse fixed-bottom bg-secondary mt-2 border-top border-success" id="footer">
+	  <div class="container-fluid justify-content-center">
+	    <div class="navbar-header">
+	      <a class="navbar-brand text-info" href="#">&copy;Copyright 2017 Christopher Beesley</a>
+	    </div>
 
-			<div class="TriviaText">Trivia Game</div>
+	  </div>
+	</nav>
 
-		</div>
-
-		<div class="Rutgers">
-
-			<img src="assets/images/Rutgers.jpg" width="193" alt="Rutgers">
-
-			<div class="RutgersText">Rutgers Info Widget</div>
-
-		</div>
-
-		<div class="Rock">
-
-			<img src="assets/images/Rock.jpg" width="193" alt="Rock Paper Scissors">
-
-			<div class="RockText">Rock Paper Scissors</div>
-
-		</div>
-
-
-	</section>
-
-	<section class="SectionTwo">
-
-		<h3 class="ConnectWithMe">Connect with Me</h3>
-
-		<a href="https://github.com/cbeez07" target="_blank"><img class="Git" src="assets/images/GitHub.png" alt="GitHub"></a>
-
-		<a href="https://www.linkedin.com/in/beesleyc07" target="_blank"><img class="LinkedIn" src="assets/images/LinkedIn.png" alt="LinkedIn"></a>
-
-		<a href="https://stackexchange.com/users/12539854/chris-beesley" target="_blank"><img class="Overflow" src="assets/images/Overflow.png" alt="Overflow"></a>
-
-	</section>
-
-	<footer>
-
-	</footer>
-
-	<footer>
-		&copy;Copyright 2017 Christopher Beesley
-	</footer>
 </body>
 </html>
